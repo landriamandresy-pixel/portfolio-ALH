@@ -1088,3 +1088,30 @@ p {
         text-align: center;
     }
 }
+
+/* ==========================================================================
+   Correction spécifique pour le bouton Envoyer
+   ========================================================================== */
+
+.submit-btn {
+    background-color: transparent !important; /* Image 2 : Fond vide */
+    color: var(--accent-color) !important;    /* Texte doré */
+    border: 1px solid var(--accent-color) !important; /* Bordure dorée */
+    padding: 1rem 2.5rem !important;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    display: inline-block;
+    width: auto;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-color) !important; /* Image 3 : Le fond devient doré */
+    color: var(--bg-dark) !important;                /* Le texte devient noir */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(200, 169, 110, 0.2);
+}
