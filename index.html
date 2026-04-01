@@ -389,29 +389,17 @@
                 
                 <!-- Right Column / Form -->
                 <div class="contact-form-container">
-                    <form name="contact" method="POST" data-netlify="true" class="contact-form">
-        
-                    <input type="hidden" name="form-name" value="contact">
-
-                 <div class="form-group">
-                     <input type="text" name="name" placeholder="Nom complet" required>
-                 </div>
-
-                 <div class="form-group">
-                      <input type="email" name="email" placeholder="Email" required>
-                 </div>
-
-                 <div class="form-group">
-                      <input type="text" name="subject" placeholder="Sujet" required>
-                  </div>
-
-                 <div class="form-group">
-                       <textarea name="message" rows="4" placeholder="Message" required></textarea>
-                  </div>
-
-                 <button type="submit" class="submit-button"> Envoyer le message →
-                 </button>
-            </form>
+                <form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
                  </div>
             </div>
         </div>
