@@ -388,19 +388,25 @@
                 </div>
                 
                 <!-- Right Column / Form -->
-                <div class="contact-form-container">
-                <form name="contact" netlify>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-                 </div>
+                 <div class="contact-form-container">
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+            <label>Nom <input type="text" name="name" required /></label>
+        </p>
+        <p>
+            <label>Email <input type="email" name="email" required /></label>
+        </p>
+        <p>
+            <label>Message <textarea name="message" required></textarea></label>
+        </p>
+        <div style="display:none">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </div>
+        <p>
+            <button type="submit">Envoyer le message</button>
+        </p>
+    </form>
+</div>
             </div>
         </div>
     </section>
