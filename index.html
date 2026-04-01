@@ -389,22 +389,30 @@
                 
                 <!-- Right Column / Form -->
                 <div class="contact-form-container">
-                    <form class="contact-form" action="https://formsubmit.co/landriamandresy@gmail.com" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Nom complet" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Sujet" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Envoyer le message &rarr;</button>
-                    </form>
-                </div>
+                    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+        
+                    <input type="hidden" name="form-name" value="contact">
+
+                 <div class="form-group">
+                     <input type="text" name="name" placeholder="Nom complet" required>
+                 </div>
+
+                 <div class="form-group">
+                      <input type="email" name="email" placeholder="Email" required>
+                 </div>
+
+                 <div class="form-group">
+                      <input type="text" name="subject" placeholder="Sujet" required>
+                  </div>
+
+                 <div class="form-group">
+                       <textarea name="message" rows="4" placeholder="Message" required></textarea>
+                  </div>
+
+                 <button type="submit" class="submit-button"> Envoyer le message →
+                 </button>
+            </form>
+                 </div>
             </div>
         </div>
     </section>
